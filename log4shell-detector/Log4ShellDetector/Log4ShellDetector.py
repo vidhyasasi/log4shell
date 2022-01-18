@@ -28,12 +28,12 @@ except ImportError:
 class detector(object):
 
     # These strings will be transformed into detection pads
-    # DETECTION_STRINGS = ['${jndi:ldap:','${jndi:rmi:', '${jndi:ldaps:', '${jndi:dns:',
-    # '${jndi:nis:', '${jndi:dns:', '${jndi:nds:', '${jndi:corba:', '${jndi:iiop:', '${jndi:http:']
+     DETECTION_STRINGS = ['${jndi:ldap:','${jndi:rmi:', '${jndi:ldaps:', '${jndi:dns:',
+     '${jndi:nis:', '${jndi:dns:', '${jndi:nds:', '${jndi:corba:', '${jndi:iiop:', '${jndi:http:']
 
     # New Detection stringds to deal with False positives found while testing
-    DETECTION_STRINGS = ['${jndi:ldap://','${jndi:rmi://', '${jndi:ldaps://', '${jndi:dns://',
-    '${jndi:nis://', '${jndi:nds://', '${jndi:corba://', '${jndi:iiop://', '${jndi:http://']
+    #DETECTION_STRINGS = ['${jndi:ldap://','${jndi:rmi://', '${jndi:ldaps://', '${jndi:dns://',
+    #'${jndi:nis://', '${jndi:nds://', '${jndi:corba://', '${jndi:iiop://', '${jndi:http://']
     
     # These strings will be applied as they are
     PLAIN_STRINGS = {
